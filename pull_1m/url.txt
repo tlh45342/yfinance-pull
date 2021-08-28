@@ -1,0 +1,2 @@
+https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
+https://docs.python.org/3/library/time.html
