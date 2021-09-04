@@ -41,14 +41,14 @@ def pull_day(Symbol, Datestr):
 #%%
 
 fname = r"m:\data\tradepool.csv"
-df = pandas.read_csv(fname,header=0,names=['Symbol'])
+names = pandas.read_csv(fname,header=0,names=['Symbol'])
     
 count = 0
-daystr  = "2021-08-16"
+daystr  = "2021-07-01"
 
-for index,row in df.iterrows():
+for index,row in names.iterrows():
       symbol = row['Symbol']
-      pull_day(symbol, daystr)
+      df = pull_day(symbol, daystr)
       count = count + 1
       fname = r"m:\data\1m\{}-{}.csv".format(symbol, daystr)
       print("Writing: ", fname)
