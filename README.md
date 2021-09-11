@@ -1,7 +1,9 @@
 # yfinance-pull
 example code for pulling financial data using yfinance
 
-Yahoo appears to keep 1M data for 30 days.
+The consisteance for Yahoo to report on 1M appears to be inconsistent.
+I have found that at the end of the month I have been able to get all 30 days.
+I have seen that intraweek I have only been able to go a few days back.
 
 When you ask for data beyond what is available you will see something like....
 - LC: No data found for this date range, symbol may be delisted
